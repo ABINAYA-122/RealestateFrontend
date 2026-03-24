@@ -1,6 +1,6 @@
 import React from 'react'
 import './AgentProfile.css'
-import listingsData from '../../data/LandingPage/listings'
+import { listings as listingsData } from "../../data/LandingPage/listings";
 
 type Props = {
   name?: string
