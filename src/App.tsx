@@ -11,16 +11,25 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/advancedsearchfilterpage" element={<AdvancedSearchFilterPage />} />
-        <Route path="/approverejectmodel" element={<ApproveRejectModelPage />} />
+        <Route
+          path="/advancedsearchfilterpage"
+          element={<AdvancedSearchFilterPage />}
+        />
+        <Route
+          path="/approverejectmodel"
+          element={<ApproveRejectModelPage />}
+        />
         <Route path="/statuschangemodel" element={<StatusChangeModelPage />} />
         <Route path="/usermanagementlist" element={<UserManagementList />} />
         <Route path="/agentprofile" element={<AgentProfilePage />} />
-        <Route path="/propertymoderation" element={<Navigate to="/approverejectmodel" replace />} />
+        <Route
+          path="/propertymoderation"
+          element={<Navigate to="/approverejectmodel" replace />}
+        />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App
