@@ -1,0 +1,147 @@
+.hero-banner,
+.hero-banner__content,
+.search-panel,
+.search-field,
+.search-field__icon {
+  display: flex;
+}
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 430px;
+  padding: 26px 22px;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(5, 10, 16, 0.18), rgba(6, 15, 29, 0.68)),
+    url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1500&q=80') center/cover;
+}
+
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  inset: auto auto -100px -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(21, 105, 255, 0.32), transparent 70%);
+}
+
+.hero-banner__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: min(100%, 760px);
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding-top: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.search-field,
+.search-field__icon {
+  align-items: center;
+  justify-content: center;
+}
+
+.search-field__icon i {
+  font-size: 16px;
+}
+
+.hero-banner h1 {
+  margin: 0;
+  width: 100%;
+  max-width: 12ch;
+  font-size: clamp(2.1rem, 3.2vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.hero-banner__text {
+  width: 100%;
+  max-width: 31ch;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.82rem;
+}
+
+.search-panel {
+  width: min(100%, 560px);
+  margin-inline: auto;
+  gap: 0.6rem;
+  padding: 6px;
+  margin-top: 0.35rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 46px rgba(3, 11, 24, 0.22);
+}
+
+.search-field {
+  flex: 1;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0 0.8rem;
+}
+
+.search-field__icon {
+  color: #8a97aa;
+}
+
+.search-field input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+.search-field input::placeholder {
+  color: #9ca9bc;
+}
+
+.search-button {
+  border: 0;
+  cursor: pointer;
+  padding: 0.95rem 1.15rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #287dff, #1657d8);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  box-shadow: 0 12px 26px rgba(34, 108, 255, 0.34);
+}
+
+@media (max-width: 719px) {
+  .hero-banner {
+    min-height: 340px;
+    padding: 22px 18px;
+    border-radius: 22px;
+  }
+
+  .hero-banner__content {
+    width: min(100%, 520px);
+  }
+
+  .hero-banner h1 {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+  }
+
+  .search-panel {
+    flex-direction: column;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero-banner {
+    min-height: 430px;
+  }
+}

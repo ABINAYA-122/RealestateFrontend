@@ -1,0 +1,13 @@
+.property-moderation-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .property-moderation-page {
+    padding: 12px;
+  }
+}

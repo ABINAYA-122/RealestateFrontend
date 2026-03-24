@@ -1,0 +1,147 @@
+.approve-reject-modal {
+  width: min(100%, 380px);
+  padding: 24px 18px 20px;
+  border: 1px solid rgba(104, 132, 183, 0.12);
+  border-radius: 24px;
+  background: rgba(19, 30, 45, 0.96);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
+  color: #f2f7ff;
+}
+
+.approve-reject-modal__handle {
+  display: block;
+  width: 34px;
+  height: 5px;
+  margin: 0 auto 18px;
+  border-radius: 999px;
+  background: rgba(123, 147, 184, 0.56);
+}
+
+.approve-reject-modal__header {
+  text-align: center;
+}
+
+.approve-reject-modal__header h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: -0.04em;
+}
+
+.approve-reject-modal__header p {
+  margin-top: 6px;
+  color: rgba(178, 195, 221, 0.7);
+  font-size: 0.95rem;
+}
+
+.approve-reject-modal__actions {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.approve-reject-modal__toggle,
+.approve-reject-modal__submit,
+.approve-reject-modal__cancel,
+.approve-reject-modal__field select,
+.approve-reject-modal__field textarea {
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.approve-reject-modal__toggle {
+  min-height: 44px;
+  background: #1a2538;
+  color: #93a7c7;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.approve-reject-modal__toggle--active {
+  background: #2881eb;
+  color: #fff;
+}
+
+.approve-reject-modal__field {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.approve-reject-modal__field span {
+  font-size: 0.92rem;
+  color: rgba(237, 243, 255, 0.88);
+}
+
+.approve-reject-modal__field select,
+.approve-reject-modal__field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  outline: none;
+  background: #202d43;
+  color: #e9f0ff;
+  resize: none;
+}
+
+.approve-reject-modal__field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #9db2d6 50%),
+    linear-gradient(135deg, #9db2d6 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.approve-reject-modal__field textarea::placeholder {
+  color: rgba(161, 178, 204, 0.74);
+}
+
+.approve-reject-modal__approval-note {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(74, 118, 182, 0.24);
+  border-radius: 16px;
+  background: rgba(31, 118, 255, 0.08);
+}
+
+.approve-reject-modal__approval-badge {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(62, 165, 116, 0.18);
+  color: #9be0ba;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.approve-reject-modal__approval-note p {
+  color: rgba(202, 217, 240, 0.84);
+}
+
+.approve-reject-modal__submit {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 22px;
+  background: linear-gradient(135deg, #2184f2, #2e7de5);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 16px 28px rgba(36, 127, 234, 0.24);
+}
+
+.approve-reject-modal__cancel {
+  width: 100%;
+  min-height: 42px;
+  margin-top: 10px;
+  background: transparent;
+  color: rgba(179, 195, 221, 0.88);
+}
+
+@media (max-width: 720px) {
+  .approve-reject-modal {
+    width: 100%;
+    padding-inline: 16px;
+  }
+}

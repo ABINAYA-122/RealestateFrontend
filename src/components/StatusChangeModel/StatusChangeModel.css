@@ -1,0 +1,149 @@
+.status-change-modal {
+  width: min(100%, 520px);
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid #dce5f4;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.status-change-modal__handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 999px;
+  background: #dbe3f3;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.status-change-modal__header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #0b1f40;
+}
+
+.status-change-modal__header p {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  color: #4b5674;
+}
+
+.status-change-modal__options {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.status-change-modal__option {
+  width: 100%;
+  border: 1px solid #d7e1f6;
+  border-radius: 12px;
+  background: #fff;
+  color: #111827;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.status-change-modal__option:hover {
+  border-color: #9cb5ed;
+}
+
+.status-change-modal__option--active {
+  border-color: #2581f2;
+  background: #f1f7ff;
+}
+
+.status-change-modal__option-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.status-change-modal__emoji {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 0.9rem;
+  background: #eef4ff;
+}
+
+.status-change-modal__option strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.status-change-modal__option p {
+  margin: 2px 0 0;
+  color: #5b627a;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.status-change-modal__radio {
+  font-size: 1rem;
+  color: #4f5d79;
+}
+
+.status-change-modal__field {
+  margin-top: 14px;
+  display: grid;
+  gap: 8px;
+  font-size: 0.93rem;
+  color: #1f2937;
+}
+
+.status-change-modal__field textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #d7dfe9;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  resize: vertical;
+  color: #1f2937;
+  background: #fff;
+  outline: none;
+}
+
+.status-change-modal__field textarea::placeholder {
+  color: #9aa3b5;
+}
+
+.status-change-modal__submit,
+.status-change-modal__cancel {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  min-height: 44px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.status-change-modal__submit {
+  background: #0b69f3;
+  color: #fff;
+  font-weight: 700;
+}
+
+.status-change-modal__cancel {
+  background: #f3f5fb;
+  color: #1f2a44;
+}
+
+@media (max-width: 720px) {
+  .status-change-modal {
+    width: 100%;
+    padding: 16px;
+  }
+}

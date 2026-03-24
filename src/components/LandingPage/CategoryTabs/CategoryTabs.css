@@ -1,0 +1,37 @@
+.filter-tabs {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.filter-tab {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.95rem 0.5rem;
+  border: 0;
+  border-radius: 16px;
+  background: #edf3fb;
+  color: #687991;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.filter-tab i {
+  font-size: 16px;
+}
+
+.filter-tab--active {
+  background: #fff;
+  color: var(--brand);
+  box-shadow: 0 14px 28px rgba(24, 57, 108, 0.08);
+}
+
+@media (max-width: 560px) {
+  .filter-tabs {
+    gap: 0.45rem;
+  }
+}
